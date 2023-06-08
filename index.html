@@ -50,12 +50,12 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44392.64122115161!2d-4.644040030441652!3d36.540311188658876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72e23e102ffa23%3A0x2058dc519b1962f4!2zMjk2NDAg0KTRg9GN0L3RhdC40YDQvtC70LAsINCc0LDQu9Cw0LPQsCwg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2snl!4v1686175294942!5m2!1sru!2snl" width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="aside__btn-box">
-                    <a class="aside__btn" href="#">send an e-mail</a>
+                    <a class="aside__btn" href="#contact">send an e-mail</a>
                     <p class="aside__text">© 2023 Sergei Sekhleian All Rights Reserved</p>
                 </div>
             </aside>
             <main class="main">
-            <section class="main__about">
+            <section class="main__about" id="about">
                 <div class="container">
                     <div class="about__heading">
                         <h2 class="about__heading-title">About me</h2>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__exp">
+            <section class="main__exp" id="exp">
                 <div class="container">
                     <div class="exp__inner">
                         <div class="exp__heading">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__service">
+            <section class="main__service" id="service">
                 <div class="container">
                     <div class="service__inner">
                         <div class="service__heading">
@@ -177,7 +177,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__portfolio">
+            <section class="main__portfolio" id="portfolio">
                 <div class="container">
                     <div class="portfolio__inner">
                         <div class="portfolio__heading">
@@ -186,35 +186,114 @@
                         <div class="portfolio__row">
                             <ul class="portfolio__row-list">
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/artlab.png" alt="">
+                                    <a href="#popup"><img src="images/artlab.png" alt=""></a>
                                     <p class="portfolio__row-text">Artlab</p>
                                 </li>
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/grill.png" alt="">
+                                    <a href="#popup-second"><img src="images/grill.png" alt=""></a>
                                     <p class="portfolio__row-text">Golden Grill</p>
                                 </li>
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/huum.png" alt="">
+                                    <a href="#popup-thr"><img src="images/huum.png" alt=""></a>
                                     <p class="portfolio__row-text">Huumanz</p>
                                 </li>
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/aranda.png" alt="">
+                                    <a href="#popup-four"><img src="images/aranda.png" alt=""></a>
                                     <p class="portfolio__row-text">Aranda</p>
                                 </li>
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/kris.png" alt="">
+                                    <a href="#popup-five"><img src="images/kris.png" alt=""></a>
                                     <p class="portfolio__row-text">Kristella</p>
                                 </li>
                                 <li class="portfolio__row-item anim-items">
-                                    <img src="images/pink.png" alt="">
+                                    <a href="#popup-sex"><img src="images/pink.png" alt=""></a>
                                     <p class="portfolio__row-text">Pink Digital</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="popup__row">
+                        <div class="popup" id="popup">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup-second">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup-thr">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup-four">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup-five">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="popup-sex">
+                            <a href="#portfolio" class="popup__area"></a>
+                            <div class="popup__body">
+                                <div class="popup__content">
+                                    <a href="#portfolio" class="popup__close"><img src="images/x.png" alt=""></a>
+                                    <div class="popup__img">
+                                        <img src="images/exempl2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="main__slider">
+            <section class="main__slider" id="slider">
                 <div class="container">
                     <div class="slider__inner">
                         <div class="slider__heading">
@@ -275,14 +354,16 @@
                     </div>
                 </div>
             </section>
-            <section class="main__message">
+            <section class="main__message" id="contact">
                 <div class="container">
                     <div class="message__inner">
                         <div class="message__heading">
                             <h2 class="message__heading-title">Contact Form</h2>
                         </div>
                         <div class="message__box anim-items">
-                            <div class="message__anim"></div>
+                            <div class="message__anim">
+
+                            </div>
                             <form class="message__form">
                                 <div class="message__form-row">
                                     <input type="text" class="message__form-input inp name" placeholder="Name*" required>
@@ -314,32 +395,32 @@
                         <div class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#about" >
                                         <img src="images/icon/about.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#exp" >
                                         <img src="images/icon/exp.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#service" >
                                         <img src="images/icon/serv.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#portfolio" >
                                         <img src="images/icon/portfolio.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#slider" >
                                         <img src="images/icon/test.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#" >
+                                    <a class="header__nav-link" href="#contact" >
                                         <img src="images/icon/contacts.png" alt="">
                                     </a>
                                 </li>
