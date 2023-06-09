@@ -1,6 +1,8 @@
+
+// =============================================================================================
 // Define the sunrise and sunset times in user's local time (24-hour format)
 const sunriseTime = '06:00';
-const sunsetTime = '20:00';
+const sunsetTime = '23:00';
 
 // Function to update the theme based on the current time
 function updateTheme() {
@@ -19,16 +21,42 @@ function updateTheme() {
 
     if (currentTimeString >= sunriseTime && currentTimeString <= sunsetTime) {
     currentTheme = 'bright';
-    document.getElementById('style').setAttribute('href', 'css/style.css'); // Set bright theme during daytime
+    document.getElementById('style').setAttribute('href', 'css/main.css'); // Set bright theme during daytime
+    window.onload = function () {
+        let preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    };
     } else {
     currentTheme = 'dark';
     document.getElementById('style').setAttribute('href', 'css/style.css');// Set dark theme during nighttime
+    window.onload = function () {
+        let preloader = document.getElementById('preloaders');
+        preloader.style.display = 'none';
+    };
     }
 }
 
 // Call the updateTheme function initially
 updateTheme();
 setInterval(updateTheme, 60000);
+// =====================================================================================================
+window.addEventListener('scroll', () => {
+	let scrollDistance = window.scrollY;
+
+	if (window.innerWidth > 768) {
+		document.querySelectorAll('section').forEach((el, i) => {
+			if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
+				document.querySelectorAll('.nav a').forEach((el) => {
+					if (el.classList.contains('active')) {
+						el.classList.remove('active');
+					}
+				});
+
+				document.querySelectorAll('.nav li')[i].querySelector('a').classList.add('active');
+			}
+		});
+	}
+});
 // =====================================================================================================
 const animItems = document.querySelectorAll('.anim-items');
 
@@ -62,6 +90,7 @@ if (animItems.length > 0) {
 }
 
 $(function () {
+    
     $('.burger, .overlay').on('click', function (e) {
         e.preventDefault()
         $('.header__nav').toggleClass('header__nav--open')
