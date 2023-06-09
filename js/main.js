@@ -19,7 +19,7 @@ function updateTheme() {
 
     if (currentTimeString >= sunriseTime && currentTimeString <= sunsetTime) {
     currentTheme = 'bright';
-    document.getElementById('style').setAttribute('href', 'css/main.css'); // Set bright theme during daytime
+    document.getElementById('style').setAttribute('href', 'css/style.css'); // Set bright theme during daytime
     } else {
     currentTheme = 'dark';
     document.getElementById('style').setAttribute('href', 'css/style.css');// Set dark theme during nighttime
@@ -29,7 +29,7 @@ function updateTheme() {
 // Call the updateTheme function initially
 updateTheme();
 setInterval(updateTheme, 60000);
-
+// =====================================================================================================
 const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0) {
