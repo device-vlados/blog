@@ -1246,9 +1246,11 @@ a.active {
   font-size: 50px;
   line-height: 61px;
 }
+
 .preloader__heading-title span {
   font-weight: 700;
 }
+
 .preloader__heading-text {
   color: #fff;
   font-weight: 300;
