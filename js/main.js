@@ -1,11 +1,15 @@
-window.onload = function () {
-    let preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
-};
+let mask = document.querySelector('.mask');
+
+window.addEventListener('load', () =>  {
+    mask.classList.add('hide');
+    setTimeout(() => {
+        mask.remove();
+    },800);
+});
 // =============================================================================================
 // Define the sunrise and sunset times in user's local time (24-hour format)
 const sunriseTime = '06:00';
-const sunsetTime = '20:00';
+const sunsetTime = '23:00';
 
 // Function to update the theme based on the current time
 function updateTheme() {

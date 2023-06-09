@@ -1,4 +1,4 @@
-.preloader {
+.mask {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -7,9 +7,13 @@
   background: linear-gradient(to right, #434343, #000000);
   top: 0;
   z-index: 120;
+  transition: .8s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hide {
+  opacity: 0;
 }
 .preloader__heading-title {
   color: #fff;
