@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link id="style" rel="stylesheet" type="text/css" href="/css/main.css">
     <title>Document</title>
 </head>
 <body>
@@ -41,7 +41,8 @@
                         </li>
                         <li class="aside__icon-item">
                             <a class="aside__icon-link" href="#">
-                                <img src="images/tel.png" alt="">
+                                <img class="tel-black" src="images/tel.png" alt="">
+                                <img class="tel-white" src="images/tel-w.png" alt="">
                             </a>
                         </li>
                     </ul>
@@ -301,7 +302,8 @@
                         </div>
                         <div class="slider__wrapper anim-items">
                             <div class="slider__arrow slider__arrow-next">
-                                <img src="images/slider-arrow2.png" alt="">
+                                <img class="arrow-black" src="images/slider-arrow2.png" alt="">
+                                <img class="arrow-white" src="images/slider-arrow-w2.png" alt="">
                             </div>
                             <div class="slider__slide">
                                 <div class="slider__slidies">
@@ -348,7 +350,8 @@
                                 </div>
                             </div>
                             <div class="slider__arrows slider__arrow-prev">
-                                <img src="images/slider-arrow.png" alt="">
+                                <img src="images/slider-arrow.png" alt="" class="arrow-black-sec">
+                                <img src="images/slider-arrow-w.png" alt="" class="arrow-white-sec">
                             </div>
                         </div>
                     </div>
@@ -362,7 +365,7 @@
                         </div>
                         <div class="message__box anim-items">
                             <div class="message__anim">
-
+                                <img src="images/contact.png" alt="">
                             </div>
                             <form class="message__form">
                                 <div class="message__form-row">
@@ -379,7 +382,7 @@
                                 </div>
                                 <div class="message__form-box">
                                     <div class="message__btn-box">
-                                        <a class="message__form-btn button" href="#">Your message here</a>
+                                        <a class="message__form-btn button" href="#contact">Your message here</a>
                                     </div>
                                 </div>
                             </form>
@@ -391,37 +394,46 @@
             <header class="header">
                 <div class="overlay"></div>
                     <div class="header__inner">
-                        <a class="burger"  href="#"><img src="images/burger.png" alt=""></a>
+                        <a class="burger"  href="#">
+                            <img class="burger-black" src="images/burger.png" alt="">
+                            <img class="burger-white" src="images/burger-w.png" alt="">
+                        </a>
                         <div class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#about" >
-                                        <img src="images/icon/about.png" alt="">
+                                        <img class="header-green" src="images/icon/about.png" alt="">
+                                        <img class="header-white" src="images/icon/about-w.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#exp" >
-                                        <img src="images/icon/exp.png" alt="">
+                                        <img class="header-green" src="images/icon/exp.png" alt="">
+                                        <img class="header-white" src="images/icon/resume-w.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#service" >
-                                        <img src="images/icon/serv.png" alt="">
+                                        <img class="header-green" src="images/icon/serv.png" alt="">
+                                        <img class="header-white" src="images/icon/serv-w.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#portfolio" >
-                                        <img src="images/icon/portfolio.png" alt="">
+                                        <img class="header-green" src="images/icon/portfolio.png" alt="">
+                                        <img class="header-white" src="images/icon/portfolio-w.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#slider" >
-                                        <img src="images/icon/test.png" alt="">
+                                        <img class="header-green" src="images/icon/test.png" alt="">
+                                        <img class="header-white" src="images/icon/test-w.png" alt="">
                                     </a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#contact" >
-                                        <img src="images/icon/contacts.png" alt="">
+                                        <img class="header-green" src="images/icon/contacts.png" alt="">
+                                        <img class="header-white" src="images/icon/contact-w.png" alt="">
                                     </a>
                                 </li>
                             </ul>
@@ -430,6 +442,8 @@
             </header>
         </div>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

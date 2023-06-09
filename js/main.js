@@ -1,3 +1,35 @@
+// Define the sunrise and sunset times in user's local time (24-hour format)
+const sunriseTime = '06:00';
+const sunsetTime = '20:00';
+
+// Function to update the theme based on the current time
+function updateTheme() {
+  // Get the current time in user's local time
+    const currentTime = new Date();
+
+  // Extract the hours and minutes from the current time
+    const currentHours = currentTime.getHours();
+    const currentMinutes = currentTime.getMinutes();
+
+  // Convert the current time to a string in HH:mm format
+    const currentTimeString = `${currentHours.toString().padStart(2, '0')}:${currentMinutes.toString().padStart(2, '0')}`;
+
+  // Determine the current theme based on the current time
+    let currentTheme = 'bright'; // Assume bright theme by default
+
+    if (currentTimeString >= sunriseTime && currentTimeString <= sunsetTime) {
+    currentTheme = 'bright';
+    document.getElementById('style').setAttribute('href', 'css/main.css'); // Set bright theme during daytime
+    } else {
+    currentTheme = 'dark';
+    document.getElementById('style').setAttribute('href', 'css/style.css');// Set dark theme during nighttime
+    }
+}
+
+// Call the updateTheme function initially
+updateTheme();
+setInterval(updateTheme, 60000);
+
 const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0) {
@@ -59,3 +91,4 @@ $(function () {
         $('body,html').animate({ scrollTop: top }, 800)
     })
 });
+ // Если сейчас ночь, то меняем файл стилей
