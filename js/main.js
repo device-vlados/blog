@@ -1,4 +1,7 @@
-
+window.onload = function () {
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+};
 // =============================================================================================
 // Define the sunrise and sunset times in user's local time (24-hour format)
 const sunriseTime = '06:00';
@@ -22,17 +25,9 @@ function updateTheme() {
     if (currentTimeString >= sunriseTime && currentTimeString <= sunsetTime) {
     currentTheme = 'bright';
     document.getElementById('style').setAttribute('href', 'css/main.css'); // Set bright theme during daytime
-    window.onload = function () {
-        let preloader = document.getElementById('preloader');
-        preloader.style.display = 'none';
-    };
     } else {
     currentTheme = 'dark';
     document.getElementById('style').setAttribute('href', 'css/style.css');// Set dark theme during nighttime
-    window.onload = function () {
-        let preloader = document.getElementById('preloaders');
-        preloader.style.display = 'none';
-    };
     }
 }
 

@@ -1222,15 +1222,12 @@ a.active {
     cursor: default;
   }
 }
-.preloaders {
-  display: none;
-}
-
 .preloader {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: #fff;
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
   top: 0;
   z-index: 120;
   display: flex;
@@ -1239,7 +1236,7 @@ a.active {
 }
 
 .preloader__heading-title {
-  color: #000;
+  color: #fff;
   font-weight: 300;
   font-size: 50px;
   line-height: 61px;
@@ -1248,7 +1245,7 @@ a.active {
   font-weight: 700;
 }
 .preloader__heading-text {
-  color: #000;
+  color: #fff;
   font-weight: 300;
   font-size: 27px;
   line-height: 33px;
@@ -1256,7 +1253,7 @@ a.active {
 
 @media (max-width: 550px) {
   .preloader__heading-title {
-    color: #000;
+    color: #fff;
     font-weight: 300;
     font-size: 30px;
     line-height: 21px;
@@ -1265,7 +1262,7 @@ a.active {
     font-weight: 700;
   }
   .preloader__heading-text {
-    color: #000;
+    color: #fff;
     font-weight: 300;
     font-size: 17px;
     line-height: 33px;
