@@ -1233,7 +1233,6 @@ a.active {
   background: #fff;
   top: 0;
   z-index: 120;
-  transition: all 2s ease;
   display: flex;
   justify-content: center;
   align-items: center;

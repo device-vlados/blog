@@ -2,7 +2,7 @@
 // =============================================================================================
 // Define the sunrise and sunset times in user's local time (24-hour format)
 const sunriseTime = '06:00';
-const sunsetTime = '23:00';
+const sunsetTime = '20:00';
 
 // Function to update the theme based on the current time
 function updateTheme() {
