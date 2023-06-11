@@ -4,38 +4,35 @@ window.addEventListener('load', () =>  {
     mask.classList.add('hide');
     setTimeout(() => {
         mask.remove();
-    },800);
+    },10000);
 });
 // =============================================================================================
-// Define the sunrise and sunset times in user's local time (24-hour format)
-const sunriseTime = '06:00';
+
+// =============================================================================================
+const sunriseTime = '05:00';
 const sunsetTime = '20:00';
 
-// Function to update the theme based on the current time
 function updateTheme() {
-  // Get the current time in user's local time
     const currentTime = new Date();
 
-  // Extract the hours and minutes from the current time
     const currentHours = currentTime.getHours();
     const currentMinutes = currentTime.getMinutes();
 
-  // Convert the current time to a string in HH:mm format
     const currentTimeString = `${currentHours.toString().padStart(2, '0')}:${currentMinutes.toString().padStart(2, '0')}`;
 
-  // Determine the current theme based on the current time
-    let currentTheme = 'bright'; // Assume bright theme by default
+    let currentTheme = 'bright';
 
     if (currentTimeString >= sunriseTime && currentTimeString <= sunsetTime) {
     currentTheme = 'bright';
-    document.getElementById('style').setAttribute('href', 'css/main.css'); // Set bright theme during daytime
+    // document.getElementById('style').setAttribute('href', 'css/main.css');
+    document.body.removeAttribute('dark');
     } else {
     currentTheme = 'dark';
-    document.getElementById('style').setAttribute('href', 'css/style.css');// Set dark theme during nighttime
+    // document.getElementById('style').setAttribute('href', 'css/style.css');
+    document.body.setAttribute('dark', '');
     }
 }
 
-// Call the updateTheme function initially
 updateTheme();
 setInterval(updateTheme, 60000);
 // =====================================================================================================
@@ -45,12 +42,11 @@ window.addEventListener('scroll', () => {
 	if (window.innerWidth > 768) {
 		document.querySelectorAll('section').forEach((el, i) => {
 			if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
-				document.querySelectorAll('.nav a').forEach((el) => {
+				document.querySelectorAll('.nav a, .header__nav--open a').forEach((el) => {
 					if (el.classList.contains('active')) {
 						el.classList.remove('active');
 					}
 				});
-
 				document.querySelectorAll('.nav li')[i].querySelector('a').classList.add('active');
 			}
 		});
@@ -119,4 +115,4 @@ $(function () {
         $('body,html').animate({ scrollTop: top }, 800)
     })
 });
- // Если сейчас ночь, то меняем файл стилей
+// ======================================================================
